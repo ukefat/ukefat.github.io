@@ -1,16 +1,25 @@
 ---
-
+import BaseHead from '../components/BaseHead.astro';
+import Header from '../components/Header.astro'
+import { Image } from 'astro:assets';
+import Monkey from '../assets/thinking-monkey.jpg'
 ---
 
+<!doctype html>
 <html lang="en">
 	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
+		<BaseHead title={"Luke"}/>
 	</head>
 	<body>
-		<h1>Astro</h1>
+    <Header />
+    <main>
+      <p>
+        Hello, welcome to my personal site! Not much to see, currently a work in progress...
+      </p>
+      <Image width={500} height={200} src={Monkey} alt="" />
+      <p>
+        I have at least one blog post though, check it out <a href="blog/mlp-visualization-across-layers">here</a>
+      </p>
+    </main>
 	</body>
 </html>

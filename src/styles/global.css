@@ -1,0 +1,68 @@
+:root {
+  /* Everforest Dark (soft) */
+  --bg: #2b3339;        /* background */
+  --bg-soft: #323c41;   /* code blocks / panels */
+  --fg: #d3c6aa;        /* main text */
+  --muted: #9da9a0;     /* secondary text */
+  --link: #7fbbb3;      /* teal */
+  --accent: #a7c080;    /* green */
+  --warning: #e69875;   /* orange */
+  --error: #e67e80;     /* red */
+  --border: #3a454a;
+  /*
+* additional:
+    "yellow": "#dbbc7f",
+    "purple": "#d699b6",
+  */
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--fg);
+  font-family: system-ui, -apple-system, sans-serif;
+}
+
+main {
+  max-width: 800px;
+  margin: 3rem auto;
+  padding: 0 1rem;
+}
+
+a {
+  color: var(--link);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.date {
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+	border-radius: 8px;
+}
+
+.katex {
+  font-size: 0.95em;
+}
+
+.katex-display {
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+
+/* Images inside markdown content */
+article img {
+  max-width: 500px;   /* adjust to taste */
+  width: 100%;
+  height: auto;
+  display: block;
+  margin: 1.5rem auto;
+}

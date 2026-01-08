@@ -1,0 +1,58 @@
+---
+import { SITE_TITLE } from '../consts';
+---
+
+<header class="site-header">
+  <nav class="nav">
+    <a href="/" class="logo">{SITE_TITLE}</a>
+
+    <ul class="nav-links">
+      <li><a href="/blog/">Blog</a></li>
+      <li><a href="/about/">About</a></li>
+    </ul>
+  </nav>
+</header>
+
+<style>
+.site-header {
+  width: 100%;
+  border-bottom: 1px solid var(--border, #ddd);
+  background: var(--bg, #fff);
+}
+
+.nav {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 1rem 1.25rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  font-weight: 600;
+  font-size: 1.1rem;
+  text-decoration: none;
+  color: inherit;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.25rem;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: inherit;
+  opacity: 0.85;
+}
+
+.nav-links a:hover {
+  opacity: 1;
+  text-decoration: underline;
+}
+</style>
