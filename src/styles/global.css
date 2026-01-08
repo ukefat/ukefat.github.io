@@ -57,3 +57,16 @@ article img {
   display: block;
   margin: 1.5rem auto;
 }
+
+.katex-display {
+  overflow-x: auto;       /* allow horizontal scroll */
+  overflow-y: hidden;
+  -webkit-overflow-scrolling: touch; /* smooth scrolling on iOS */
+  max-width: 100%;        /* prevent exceeding container */
+  box-sizing: border-box; /* include padding in width */
+}
+
+.katex {
+  word-wrap: break-word;  /* break long inline math */
+  max-width: 100%;
+}
