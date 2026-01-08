@@ -49,15 +49,6 @@ img {
 	border-radius: 8px;
 }
 
-.katex {
-  font-size: 0.95em;
-}
-
-.katex-display {
-  overflow-x: auto;
-  overflow-y: hidden;
-}
-
 /* Images inside markdown content */
 article img {
   max-width: 500px;   /* adjust to taste */
