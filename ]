@@ -58,8 +58,8 @@ article img {
   margin: 1.5rem auto;
 }
 
-.hero-image img {
-  max-width: 800px;
+hero-image {
+  max-width: 1000px;
 }
 
 .pixelated {

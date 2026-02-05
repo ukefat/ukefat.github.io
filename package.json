@@ -9,6 +9,7 @@
     "astro": "astro"
   },
   "dependencies": {
+    "@astrojs/mdx": "^4.3.13",
     "astro": "^5.16.7",
     "katex": "^0.16.27",
     "rehype-katex": "^7.0.1",

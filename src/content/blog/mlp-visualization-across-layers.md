@@ -2,6 +2,7 @@
 title: 'MLP Visualization Across Layers'
 pubDate: 2026-01-07
 description: 'how to visualize MLP across layers'
+editDate: 2026-02-04
 tags: [ml, math]
 heroImage: '../../assets/mlp-visualization/green-tunnel.jpg'
 ---
@@ -14,6 +15,10 @@ multiple layers could actually twist and contort the data to fit our needs
 nicely. My goal is to visualize this process so that we can get some more
 intuition on why multiple layers are actually necessary. We’ll start as
 simple as possible and see how more layers can solve our problems.
+
+*Note: A while after creating this post, I realized I chose probably the worst
+possible colour combinations for someone with colour-blindness. For those
+with colour-blindness, I apologize and will try to do better in the future.*
 
 ## Why Not Just Use One Layer?
 
