@@ -4,7 +4,7 @@ pubDate: 2026-02-04
 description: 'Recreating the article Growing NCA in PyTorch'
 editDate: 2026-02-04
 tags: [ml,ca]
-heroImage: '../../../public/assets/recreating-growing-nca/partial-smile.png'
+heroImage: '../../assets/recreating-growing-nca/partial-smile.png'
 ---
 
 I first found out about Neural Cellular Automata through this [article by
@@ -90,7 +90,7 @@ to 128-neuron hidden state, and then finally needs to output its new state,
 which is 16 channels. This leads to 64 * 128 + 128 * 16 = 10240 trainable
 parameters.
 
-<img src="../../../public/assets/recreating-growing-nca/model-diagram-updated.png" class="img-large"/>
+<img src="/assets/recreating-growing-nca/model-diagram-updated.png" class="img-large"/>
 
 Here is our code for the model. It is surprisingly simple given the complex task.
 
@@ -128,7 +128,7 @@ target image, then we backpropagate through time as in a RNN. We update the
 weights accordingly and continue this process until our model successfully
 grows from seed to target image. We can see the output below!
 
-<img src="../../../public/assets/recreating-growing-nca/growing-microbe.gif" class="pixelated"/>
+<img src="/assets/recreating-growing-nca/growing-microbe.gif" class="pixelated"/>
 
 This works surprisingly well, except the problem is that we only trained our
 model to *just reach* the target state and not maintain it. Therefore, in most
@@ -136,7 +136,7 @@ cases, after we reach our 70 steps, our model has never been trained to go
 beyond this point, so it doesn't know what to do after reaching the target, and
 it just falls apart...
 
-<img src="../../../public/assets/recreating-growing-nca/microbe_collapse.gif" class="pixelated"/>
+<img src="/assets/recreating-growing-nca/microbe_collapse.gif" class="pixelated"/>
 
 ### Maintaing form with pooling
 
@@ -164,7 +164,7 @@ Look at how the pool slowly gets full of states closer to the target image.
 With that implemented, we retrain our model and see that it does a much better
 job of maintaining itself.
 
-<img src="../../../public/assets/recreating-growing-nca/long_microbe_maintain.gif" class="pixelated"/>
+<img src="/assets/recreating-growing-nca/long_microbe_maintain.gif" class="pixelated"/>
 
 ### Regenerating
 
@@ -189,7 +189,7 @@ batch.
 This works quite well. Even when slicing it in half which we didn’t train on,
 the cells are all still able to work together to return to the target state.
 
-<img src="../../../public/assets/recreating-growing-nca/nca_regen.gif" class="pixelated"/>
+<img src="/assets/recreating-growing-nca/nca_regen.gif" class="pixelated"/>
 
 Also note, the microbe is a lot less detailed than before. It is missing the
 noodles that were previously sticking out of it. After implementing damage, the
@@ -230,7 +230,7 @@ contributing to the issue.
 I eventually later tried the exact same model that was failing to accurately
 repoduce the microbe emoji, except on the lizard emoji.
 
-<img src="../../../public/assets/recreating-growing-nca/nca_pwned_liz.gif"
+<img src="/assets/recreating-growing-nca/nca_pwned_liz.gif"
 class="pixelated"/>
 
 First of all, the lizard already seems more accurate to the target image,
@@ -259,11 +259,11 @@ learn. I thought of things like colour-coding repeating structures or building
 using more circles and repeating structure, but I ultimately decided to
 postpone this for some other time. Here are some of the lizards I drew though.
 
-<img src="../../../public/assets/recreating-growing-nca/sexy-back.png"
+<img src="/assets/recreating-growing-nca/sexy-back.png"
 class="pixelated img-small"/>
-<img src="../../../public/assets/recreating-growing-nca/colour-lizard.png"
+<img src="/assets/recreating-growing-nca/colour-lizard.png"
 class="pixelated img-small"/>
-<img src="../../../public/assets/recreating-growing-nca/frog.png"
+<img src="/assets/recreating-growing-nca/frog.png"
 class="pixelated img-small"/>
 
 ### Normalizing is important
