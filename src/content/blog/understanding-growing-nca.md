@@ -4,7 +4,7 @@ pubDate: 2026-02-04
 description: 'Recreating the article Growing NCA in PyTorch'
 editDate: 2026-02-04
 tags: [ml,ca]
-heroImage: '../../assets/recreating-growing-nca/partial-smile.png'
+heroImage: '../../assets/recreating-growing-nca/patterns.jpg'
 ---
 
 I first found out about Neural Cellular Automata through this [article by
@@ -138,7 +138,7 @@ it just falls apart...
 
 <img src="/assets/recreating-growing-nca/microbe_collapse.gif" class="pixelated"/>
 
-### Maintaing form with pooling
+### Maintaining form with pooling
 
 In order to get our model to keep its form, we need to train it to start off
 with something close to the target image and keep it there. We do this by using a
@@ -175,7 +175,7 @@ when it is cut off.
 
 ![piccolo regrow arm](https://media1.tenor.com/m/8hh4MkOadoIAAAAC/piccolo-regeneration.gif)
 
-We can train our model to do this by just repeatedly punchings holes in our
+We can train our model to do this by just repeatedly punching holes in our
 samples.
 
 ![goten punching throwing 1000 punches](https://media1.tenor.com/m/4GMfoIq0xaIAAAAC/goten-rapid-fire-fist.gif)

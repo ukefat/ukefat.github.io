@@ -1,6 +1,6 @@
 :root {
   /* Everforest Dark (soft) */
-  --bg: #2b3339;        /* background */
+  --bg: #272E33;        /* background */
   --bg-soft: #323c41;   /* code blocks / panels */
   --fg: #d3c6aa;        /* main text */
   --muted: #9da9a0;     /* secondary text */
@@ -20,11 +20,15 @@ body {
   margin: 0;
   background: var(--bg);
   color: var(--fg);
-  font-family: system-ui, -apple-system, sans-serif;
+  font-family: 'Lora';
+}
+
+h1,h2,h3,h4{
+  font-family: 'IBM Plex Mono', monospace;
 }
 
 main {
-  max-width: 1000px;
+  max-width: 800px;
   margin: 3rem auto;
   padding: 0 1rem;
 }
@@ -43,10 +47,19 @@ a:hover {
   font-size: 0.9rem;
 }
 
+
 img {
 	max-width: 100%;
 	height: auto;
 	border-radius: 8px;
+}
+
+article video{
+  max-width:400px;
+  width: 100%;
+  height: auto;
+  display: block;
+  margin: 1.5rem auto;
 }
 
 /* Images inside markdown content */

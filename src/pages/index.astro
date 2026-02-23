@@ -1,25 +1,37 @@
 ---
+import { SITE_TITLE } from '../consts'
 import BaseHead from '../components/BaseHead.astro';
 import Header from '../components/Header.astro'
-import { Image } from 'astro:assets';
-import Monkey from '../assets/thinking-monkey.jpg'
 ---
 
 <!doctype html>
 <html lang="en">
 	<head>
-		<BaseHead title={"Luke"}/>
+    <BaseHead title={"About"}/>
+<style>
+  img {
+    max-width:250px;
+    width:100%;
+    height: auto;
+  }
+</style>
 	</head>
 	<body>
     <Header />
     <main>
-      <p>
-        Hello, welcome to my personal site! Not much to see, currently a work in progress...
-      </p>
-      <Image width={500} height={200} src={Monkey} alt="" />
-      <p>
-        I have at least one blog post though, check it out <a href="blog/mlp-visualization-across-layers">here</a>
-      </p>
+      <article>
+        <img src="/luke_lights_japan.jpg"/>
+        <p>
+        My name is Luke Fatovich and I have a degree in Software Engineering from the University of Calgary.
+        I have some interests in learning more about intelligence, whether it's natural or artificial.
+        I plan to try and explore related topics on this blog and hopefully have a little fun in the process!
+        </p>
+        <p>
+        ukefat@gmail.com / 
+        <a href="https://www.linkedin.com/in/luke-fatovich/">LinkedIn</a> /
+        <a href="https://github.com/ukefat">GitHub</a>
+        </p>
+      </article>
     </main>
 	</body>
 </html>
